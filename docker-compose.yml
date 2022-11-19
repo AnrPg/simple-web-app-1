@@ -9,3 +9,4 @@ services:
       dockerfile: 'nodejs-dockerfile.debug'
     ports:
       - '5000:8080'
+    
