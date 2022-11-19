@@ -7,9 +7,7 @@ COPY package*.json ./
 RUN npm install
 RUN npm install -g nodemon
 
-COPY ./src .
-
-# RUN echo 'nameserver 8.8.8.8'>/etc/resolv.conf
+#COPY ./src .
 
 EXPOSE 8080
 CMD [ "npm", "start" ]
