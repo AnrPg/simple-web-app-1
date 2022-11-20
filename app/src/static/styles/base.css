@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "HNDWR-PacificoRegular"; /* Fallback families => "Pacifico", "cursive" */
+    src: url("fonts/Pacifico-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HNDWR-CourgetteRegular"; /* Fallback families => "Courgette", "cursive" */
+    src: url("fonts/Courgette-Regular.ttf");
+}
+
+@font-face {
+    font-family: "HNDWR-CookieRegular"; /* Fallback families => "Pacifico", "cursive" */
+    src: url("fonts/Cookie-Regular.ttf");
+}
+
+@font-face {
+    font-family: "DISPLAY-BangersRegular"; /* Fallback families => 'Bangers', cursive */
+    src: url("fonts/Bangers-Regular.ttf");
+}
+
+@font-face {
+    font-family: "SERIF-AliceRegular"; /* Fallback families => 'Alice', "serif" */
+    src: url("fonts/Alice-Regular.ttf");
+}

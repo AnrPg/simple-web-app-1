@@ -1,0 +1,42 @@
+@import "base.css";
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: rgb(36, 53, 36);
+    overflow: hidden;
+}
+
+.topnav ul {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* .topnav li {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+} */
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    /*color: radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);*//*bisque;*/
+    /* color: rgb(255,243,199); */
+    background: -moz-radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
+    background: -webkit-radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
+    background: radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff3c7",endColorstr="#b57c00",GradientType=1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 1%;
+    font-family:  "HNDWR-PacificoRegular", "Pacifico", "cursive"; /* font-family:  "DISPLAY-BangersRegular", "Bangers", "cursive";*/
+    /* letter-spacing: 0.2rem; */
+    /* word-spacing: 0.4rem; */
+}
+
+.topnav #nav-icon {
+    margin-left: auto;
+}

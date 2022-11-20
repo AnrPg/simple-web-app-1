@@ -5,10 +5,9 @@
     "author": "Regas Nikola <regas.apn@gmail.com>",
     "main": "server.js",
     "dependencies": {
-        "express": "*",
-        "redis": "3.1.2"
+        "express": "*"
     },
     "scripts": {
-        "start": "nodemon --watch ./shared-volume -e js,json,css,css3,html ./shared-volume/src/js/server.js"
+        "start": "nodemon --watch ./shared-volume -e js,json,css,css3,html ./shared-volume/server.js"
     }
 }
