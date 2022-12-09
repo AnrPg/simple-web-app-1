@@ -15,26 +15,44 @@
     </head>
 
     <body>
-        <nav class="topnav">
-            <ul>
-                <!-- <li>     -->
-                    <a href="#home">Home</a>                                           
-                <!-- </li> -->
-                <!-- <li>     -->
-                    <a href="#daily">Daily Caroussel</a>                               
-                <!-- </li> -->
-                <!-- <li>     -->
-                    <a href="#gratitude">Gratitude Caroussel</a>                       
-                <!-- </li> -->
-                <!-- <li>     -->
-                    <a href="#dreams">Dreams Caroussel</a>                             
-                <!-- </li> -->
-                <!-- <li>    -->
-                    <a href="javascript:void(0);" id="nav-icon" onclick="myFunction()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                <!-- </li> -->
-            </ul>
-        </nav>
+        <div id="body-div">
+            <nav class="top-nav">
+                <ul class="nav-list">
+                    <li>    
+                        <a href="#home">Home</a>                                           
+                    </li>
+                    <li>    
+                        <a href="#daily">Daily Caroussel</a>                               
+                    </li>
+                    <li>    
+                        <a href="#gratitude">Gratitude Caroussel</a>                       
+                    </li>
+                    <li>    
+                        <a href="#dreams">Dreams Caroussel</a>                             
+                    </li>
+                    <li id="nav-icon">   
+                        <a href="javascript:void(0);" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="main-area">
+                <div class="carousel">
+                    <!-- <div class="carousel-basis">
+                        <img src="../pics/carousel-basis.png" alt="Carousel" >
+                    </div> -->
+                    <div class="carousel-horse" id="left-horse">
+                        <img src="../pics/Carousel-horse.png" alt="Next image horse in carousel">
+                    </div>
+                    <div class="carousel-horse" id="central-horse">
+                        <img src="../pics/Carousel-horse.png" alt="Next image horse in carousel">
+                    </div>
+                    <div class="carousel-horse" id="right-horse">
+                        <img src="../pics/Carousel-horse.png" alt="Next image horse in carousel">
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

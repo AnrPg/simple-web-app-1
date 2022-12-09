@@ -1,12 +1,17 @@
 @import "base.css";
 
-/* Add a black background color to the top navigation */
-.topnav {
-    background-color: rgb(36, 53, 36);
+/* Add a purple background color to the top navigation */
+.top-nav {
+    position: sticky;
+    background: var(--color-nav-bgrd-fallback, rgb(151, 199, 238));
+    background: var(--color-nav-bgrd-moz, rgb(151, 199, 238));
+    background: var(--color-nav-bgrd-webkit, rgb(151, 199, 238));
+    background: var(--color-nav-bgrd, rgb(151, 199, 238));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#97edff",GradientType=1);
     overflow: hidden;
 }
 
-.topnav ul {
+.nav-list {
     margin: 0;
     width: 100%;
     display: flex;
@@ -15,28 +20,149 @@
     align-items: center;
 }
 
-/* .topnav li {
+/* .top-nav li {
     list-style-type: none;
     display: flex;
     flex-direction: row;
 } */
 
 /* Style the links inside the navigation bar */
-.topnav a {
+.top-nav li {
     /*color: radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);*//*bisque;*/
-    /* color: rgb(255,243,199); */
-    background: -moz-radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
-    background: radial-gradient(circle, rgba(255,243,199,1) 0%, rgba(241,244,151,0.9444152661064426) 83%, rgba(181,124,0,1) 100%);
+    /* color: var(--color-nav-font-fallback); */
+    background: var(--color-nav-font-moz, rgba(255,243,199,1));
+    background: var(--color-nav-font-webkit, rgba(255,243,199,1));
+    background: var(--color-nav-font, rgba(255,243,199,1));
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fff3c7",endColorstr="#b57c00",GradientType=1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1%;
+    font-size: 1.5em;
     font-family:  "HNDWR-PacificoRegular", "Pacifico", "cursive"; /* font-family:  "DISPLAY-BangersRegular", "Bangers", "cursive";*/
     /* letter-spacing: 0.2rem; */
     /* word-spacing: 0.4rem; */
 }
 
-.topnav #nav-icon {
+.top-nav #nav-icon {
     margin-left: auto;
 }
+
+/* .main-area {
+    width: 100%;
+    height: 100%;
+    background-image: url(../pics/watercolor-pastel-background.webp);
+    background-repeat: round;
+} */
+
+body {
+    background-image: var(--img-bgrd);
+    background-repeat: var(--img-bgrd-repeat, round);
+
+    width: 100%;
+    height: 100%;
+}
+
+/* #body-div {
+    width: 100%;
+    height: 100%;
+} */
+
+.main-area {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.carousel {
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    justify-content: center;
+
+    background-image: var(--img-carousel-basis);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.carousel-horse {
+    position: relative;
+} 
+
+#left-horse {
+    top: 30vh;
+    left: 15vw;
+}
+
+#central-horse {
+    top: 30vh;
+}
+
+#right-horse {
+    top: 30vh;
+    right: 15vw;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@media screen and (max-width: 800px) {
+    .top-nav a {
+        font-size: 0.8em;        
+    }
+
+    body {
+        --img-bgrd-repeat: repeat-y;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+
+    .top-nav ul {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;   
+    }
+
+    .top-nav a { */
+        /* font-size: 0.8em; */
+        /* font-family: 'Times New Roman', Arial, sans-serif; */
+        /* font-weight: bolder;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    body {
+        --img-bgrd-repeat: repeat-y;
+    }
+
+    #nav-icon {
+        display: none;
+    }
+} */
